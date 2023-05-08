@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 10px 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-menus ul li {
+    list-style: none;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.header-menus li {
+    display: inline-block;
+    
+}
