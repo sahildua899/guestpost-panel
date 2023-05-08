@@ -30,6 +30,7 @@ const submitData = (e) =>{
  
 // Displaying results to console
 .then(alert('Data Added '))
-.then(form.reset());
+.then(document.location = "./tablepage.html")
+.then(form.reset())
 }
 form.addEventListener('submit', submitData);
