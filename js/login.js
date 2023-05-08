@@ -24,8 +24,9 @@ const fetchingUsers = () =>{
 const runLogin = (UserData)=>{
     for(let i=0; i<UserData.length; i++) {
         if(username.value === UserData[i].username && password.value === UserData[i].password) {
-            alert(`Login Success, welcome ${username.value}`)
-            return document.location = './tablepage.html'
+            alert(`Login Success, welcome ${username.value}`);
+            localStorage.setItem('user', JSON.stringify(UserData))
+            return document.location = './html/tablepage.html'
         }else {
             alert('Invalid Login Details')
             return loginForm.reset()
